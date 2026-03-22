@@ -89,34 +89,34 @@ Get in touch with Sanjeevani Hospital for consultation and medical care.
 
 <h4 class="mb-4">Appointment Request</h4>
 
-<form>
+<form id="appointmentForm">
 
 <div class="row g-3">
 
 <div class="col-md-6">
 <label class="form-label">Full Name</label>
-<input type="text" class="form-control" placeholder="Enter your name">
+<input type="text" id="name" class="form-control" placeholder="Enter your name">
 </div>
 
 <div class="col-md-6">
 <label class="form-label">Phone Number</label>
-<input type="tel" class="form-control" placeholder="Enter phone number">
+<input type="tel" id="phone" class="form-control" placeholder="Enter phone number">
 </div>
 
 <div class="col-md-6">
 <label class="form-label">Email</label>
-<input type="email" class="form-control" placeholder="Enter email">
+<input type="email" id="email" class="form-control" placeholder="Enter email">
 </div>
 
 <div class="col-md-6">
 <label class="form-label">Preferred Date</label>
-<input type="date" class="form-control">
+<input type="date" id="date" class="form-control">
 </div>
 
 <div class="col-md-6">
 <label class="form-label">Department</label>
 
-<select class="form-select">
+<select id="department" class="form-select">
 
 <option>General Medicine</option>
 <option>Gynecology</option>
@@ -132,14 +132,14 @@ Get in touch with Sanjeevani Hospital for consultation and medical care.
 
 <label class="form-label">Message</label>
 
-<textarea class="form-control" rows="3"
+<textarea id="message" class="form-control" rows="3"
 placeholder="Describe your concern"></textarea>
 
 </div>
 
 <div class="col-12">
 
-<button class="btn btn-primary px-4 mt-2">
+<button type="submit" class="btn btn-primary px-4 mt-2">
 
 Book Appointment
 
