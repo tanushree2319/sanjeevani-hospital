@@ -1,53 +1,57 @@
+/* Fade Animation */
 const faders = document.querySelectorAll(".fade-up");
 
-const observer = new IntersectionObserver(entries=>{
-entries.forEach(entry=>{
-if(entry.isIntersecting){
-entry.target.classList.add("show");
+if (faders.length > 0) {
+  const observer = new IntersectionObserver(entries=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){
+        entry.target.classList.add("show");
+      }
+    });
+  });
+
+  faders.forEach(el=>observer.observe(el));
 }
-});
-});
 
-faders.forEach(el=>observer.observe(el));
 
-/* Smooth Hero Slider */
-
+/* Hero Slider */
 const slides = document.querySelectorAll(".hero-slide");
 
-let index = 0;
+if (slides.length > 0) {
+  let index = 0;
 
-function showNextSlide(){
+  function showNextSlide(){
+    slides[index].classList.remove("active");
+    index = (index + 1) % slides.length;
+    slides[index].classList.add("active");
+  }
 
-slides[index].classList.remove("active");
-
-index = (index + 1) % slides.length;
-
-slides[index].classList.add("active");
-
+  setInterval(showNextSlide, 3000);
 }
 
-setInterval(showNextSlide, 3000);
 
+/* WhatsApp Form */
+document.addEventListener("DOMContentLoaded", function() {
 
-/* ✅ WhatsApp Appointment Form */
+  const form = document.getElementById("appointmentForm");
 
-document.getElementById("appointmentForm").addEventListener("submit", function(e) {
-    e.preventDefault();
+  if(form){
+    form.addEventListener("submit", function(e) {
+        e.preventDefault();
 
-    let name = document.getElementById("name").value;
-    let phone = document.getElementById("phone").value;
-    let email = document.getElementById("email").value;
-    let date = document.getElementById("date").value;
-    let department = document.getElementById("department").value;
-    let message = document.getElementById("message").value;
+        let name = document.getElementById("name").value;
+        let phone = document.getElementById("phone").value;
+        let email = document.getElementById("email").value;
+        let date = document.getElementById("date").value;
+        let department = document.getElementById("department").value;
+        let message = document.getElementById("message").value;
 
-    // ✅ Validation
-    if(name === "" || phone === "" || date === ""){
-        alert("Please fill required fields");
-        return;
-    }
+        if(name === "" || phone === "" || date === ""){
+            alert("Please fill required fields");
+            return;
+        }
 
-    let whatsappMessage = `New Appointment Request:%0A
+        let whatsappMessage = `New Appointment Request:%0A
 Name: ${name}%0A
 Phone: ${phone}%0A
 Email: ${email}%0A
@@ -55,9 +59,10 @@ Date: ${date}%0A
 Department: ${department}%0A
 Message: ${message}`;
 
-    let whatsappNumber = "919822234434";
+        let url = `https://wa.me/919822234434?text=${whatsappMessage}`;
 
-    let url = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+        window.open(url, "_blank");
+    });
+  }
 
-    window.open(url, "_blank");
 });
