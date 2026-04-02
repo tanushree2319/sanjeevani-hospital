@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sanjeevani Hospital in Nagpur offers multispeciality healthcare, maternity services, emergency care, and expert doctors with compassionate treatment.">
     <title>Sanjeevani Hospital Nagpur</title>
 
     <!-- Bootstrap CSS -->
@@ -42,9 +43,12 @@
 </div>
   <body>
 
-    <nav class="navbar navbar-expand-lg bg-white shadow-sm py-3">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
       <div class="container">
-          <a class="navbar-brand fw-bold" href="#">Sanjeevani Hospital</a>
+          <a class="navbar-brand fw-semibold" href="#">
+            <span class="brand-primary">Sanjeevani</span>
+            <span class="brand-light">Hospital</span>
+          </a>
 
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
               <span class="navbar-toggler-icon"></span>
@@ -52,7 +56,7 @@
 
           <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav ms-auto">
-                  <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                  <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
                   <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                   <li class="nav-item">
                     <a class="nav-link" href="services.html">Services</a>
@@ -70,55 +74,50 @@
       </div>
     </nav>
 
-    <section class="hero py-5 bg-light" style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);">
-      <div class="container py-lg-5">
-        <div class="row align-items-center g-5">
-          
-          <div class="col-lg-6">
-            <h1 class="display-4 fw-bold text-primary mb-3" style="font-family: 'Playfair Display', serif;">
-                Caring for You, Always.
-            </h1>
-            <p class="h5 fw-medium text-secondary mb-4 italic">
-                तुमची काळजी, सदैव आमची जबाबदारी.
-            </p>
-            
-            <div class="pe-lg-5">
-                <p class="lead mb-2 text-dark">
-                    At Sanjeevani Hospital & Maternity Nursing Home, we deliver multi-speciality and surgical care with dedication and compassion.
-                </p>
-                <p class="text-muted border-start border-primary border-3 ps-3">
-                    संजिवनी हॉस्पिटल व मॅटर्निटी नर्सिंग होममध्ये आम्ही समर्पित व प्रेमळ सेवा देतो, बहुविशेषज्ञ व शस्त्रक्रिया सेवा उपलब्ध आहेत. 
-                </p>
-            </div>
+    <section class="hero position-relative">
 
-            <div class="mt-5 d-flex flex-column flex-sm-row gap-3 align-items-start">
-              <a href="contact.html" class="btn btn-primary px-4">
-                Book Appointment
-              </a>
-              <a href="tel:+0712-648864" class="btn btn-outline-primary px-4">
-                Call Now
-              </a>
-            </div>
-          </div>
+  <!-- Slider Background -->
+  <div class="hero-slider">
+    <img src="assets/images/hero.jpg" class="hero-slide active" alt="">
+    <img src="assets/images/hero2.jpg" class="hero-slide" alt="">
+    <img src="assets/images/hero3.jpg" class="hero-slide" alt="">
+  </div>
 
-          <div class="col-lg-6 text-center">
-            <div class="hero-img-container p-2 bg-white rounded-4 shadow-lg hero-slider">
+  <!-- Overlay Content -->
+  <div class="hero-content container">
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="hero-text">
 
-              <img src="assets/images/hero.jpg" class="hero-slide active" alt="">
-              <img src="assets/images/hero2.jpg" class="hero-slide" alt="">
-              <img src="assets/images/hero3.jpg" class="hero-slide" alt="">
+      <h1 class="display-4 fw-bold mb-3">
+        Multispeciality Hospital in Nagpur
+      </h1>
 
-            </div>
-          </div>
+      <p class="hero-subtitle lead mb-2">
+        Caring for you always.
+      </p>
 
-        </div> </div> </section>
+      <p class="hero-marathi text-light opacity-75">
+        तुमची काळजी, सदैव आमची जबाबदारी.
+      </p>
+
+      <div class="mt-4">
+        <a href="contact.html" class="btn btn-primary px-4 py-2 fw-semibold">
+          Book Appointment
+        </a>
+      </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
     <!-- About Section Starts -->
     <section id="about" class="about py-5 bg-white">
     <div class="container">
 
       <!-- Section Heading -->
       <div class="text-center mb-5">
-        <h2 class="display-6 fw-bold">Trusted Multispeciality Care in Nagpur</h2>
+        <h2 class="display-6 fw-bold">About Sanjeevani Hospital</h2>
         <p class="text-muted">Committed to Compassionate & Advanced Healthcare</p>
       </div>
 
@@ -133,7 +132,7 @@
 
         <!-- Text Side -->
         <div class="col-lg-6">
-          <h4 class="text-primary mb-3">Who We Are</h4>
+          <h4 class="section-subtitle mb-3">Who We Are</h4>
 
           <p class="lead">
             Sanjeevani Nursing Home & Multispeciality Hospital has been dedicated 
@@ -149,13 +148,13 @@
             आपल्या आरोग्याची काळजी हेच आमचं सर्वोच्च ध्येय आहे.
           </p>
 
-          <a href="about.html" class="btn btn-primary mt-3 px-4 ">
+          <a href="about.html" class="btn btn-primary mt-3 px-4">
             Learn More
           </a>
         
         </div>
-      </div>
-    </div>
+  </div>
+</div>
 </section>
 <!-- About Section Ends -->
 
@@ -175,7 +174,7 @@
       <!-- Service 1 -->
       <div class="col-md-6 col-lg-4">
         <div class="card border-0 shadow-sm h-100 text-center p-4">
-          <h5 class="text-primary fw-semibold mb-3">Emergency & Accident Care</h5>
+          <h5 class="service-title fw-semibold mb-3">Emergency & Accident Care</h5>
           <p class="text-muted">
             Immediate medical attention and trauma care available for emergencies.
           </p>
@@ -185,7 +184,7 @@
       <!-- Service 2 -->
       <div class="col-md-6 col-lg-4">
         <div class="card border-0 shadow-sm h-100 text-center p-4">
-          <h5 class="text-primary fw-semibold mb-3">General Medicine</h5>
+          <h5 class="service-title fw-semibold mb-3">General Medicine</h5>
           <p class="text-muted">
             Diagnosis and treatment for a wide range of acute and chronic illnesses.
           </p>
@@ -195,7 +194,7 @@
       <!-- Service 3 -->
       <div class="col-md-6 col-lg-4">
         <div class="card border-0 shadow-sm h-100 text-center p-4">
-          <h5 class="text-primary fw-semibold mb-3">Cardiology & Diabetes Care</h5>
+          <h5 class="service-title fw-semibold mb-3">Cardiology & Diabetes Care</h5>
           <p class="text-muted">
             Specialized care for heart health and diabetes management.
           </p>
@@ -205,7 +204,7 @@
       <!-- Service 4 -->
       <div class="col-md-6 col-lg-4">
         <div class="card border-0 shadow-sm h-100 text-center p-4">
-          <h5 class="text-primary fw-semibold mb-3">Gynecology & Maternity</h5>
+          <h5 class="service-title fw-semibold mb-3">Gynecology & Maternity</h5>
           <p class="text-muted">
             Comprehensive women’s healthcare and maternity services.
           </p>
@@ -215,7 +214,7 @@
       <!-- Service 5 -->
       <div class="col-md-6 col-lg-4">
         <div class="card border-0 shadow-sm h-100 text-center p-4">
-          <h5 class="text-primary fw-semibold mb-3">Orthopedic Care</h5>
+          <h5 class="service-title fw-semibold mb-3">Orthopedic Care</h5>
           <p class="text-muted">
             Treatment for bone, joint, and musculoskeletal conditions.
           </p>
@@ -225,7 +224,7 @@
       <!-- Service 6 -->
       <div class="col-md-6 col-lg-4">
         <div class="card border-0 shadow-sm h-100 text-center p-4">
-          <h5 class="text-primary fw-semibold mb-3">Pediatrics</h5>
+          <h5 class="service-title fw-semibold mb-3">Pediatrics</h5>
           <p class="text-muted">
             Dedicated healthcare services for infants and children.
           </p>
@@ -264,13 +263,13 @@ Sanjeevani Multispeciality Hospital provides compassionate and advanced healthca
 <div class="footer-contact-links">
 
 <p>
-<i class="bi bi-telephone-fill"></i>
-<a href="tel:+0712648864">0712-648864</a>
+<i class="bi bi-telephone-fill footer-color"></i>
+<a href="tel:+0712648864" class="text-decoration-none footer-color">0712-648864</a>
 </p>
 
 <p>
-<i class="bi bi-whatsapp"></i>
-<a href="https://wa.me/919822234434" target="_blank">
+<i class="bi bi-whatsapp footer-color"></i>
+<a href="https://wa.me/919822234434" class="text-decoration-none footer-color" target="_blank">
 09822 234434
 </a>
 </p>
