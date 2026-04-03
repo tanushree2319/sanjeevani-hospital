@@ -399,6 +399,16 @@ color:var(--primary);
   color: var(--primary);
 }
 
+.footer-credit {
+  color: var(--primary);
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.footer-credit:hover {
+  color: #1f5e8a;
+}
+
 .footer-map iframe{
 border-radius:10px;
 box-shadow:0 6px 18px rgba(0,0,0,0.08);
